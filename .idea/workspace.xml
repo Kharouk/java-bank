@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="580c56b3-3fef-44e6-919c-b3172b801b9c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/out/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaBank/javabank/JavaBank.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaBank/javabank/JavaBankTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javabank/JavaBank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javabank/JavaBank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/javabank/JavaBankTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javabank/JavaBankTest.java" afterDir="false" />
     </list>
     <ignored path="out/" />
@@ -40,13 +34,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2219" />
+          <entry key="java" value="2332" />
           <entry key="txt" value="76" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2219" />
+          <entry key="JAVA" value="2332" />
           <entry key="PLAIN_TEXT" value="76" />
         </counts>
       </usages-collector>
@@ -70,10 +64,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/javabank/JavaBankTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+            <state relative-caret-position="330">
+              <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#275#276#0" expanded="true" />
+                <element signature="e#315#316#0" expanded="true" />
+                <element signature="e#392#393#0" expanded="true" />
+                <element signature="e#466#467#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -147,7 +145,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541423298109" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541425301912" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -177,7 +175,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.JavaBankTest">
+  <component name="RunManager" selected="JUnit.JavaBankTest.checksIfWorking">
     <configuration name="JavaBank" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="javabank.JavaBank" />
       <module name="JavaBank" />
@@ -187,20 +185,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JavaBankTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaBank" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="javabank.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="javabank" />
-      <option name="MAIN_CLASS_NAME" value="javabank.JavaBankTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -215,6 +199,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="javabank" />
       <option name="MAIN_CLASS_NAME" value="javabank.JavaBankTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JavaBankTest.checksIfWorking" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaBank" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javabank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="javabank" />
+      <option name="MAIN_CLASS_NAME" value="javabank.JavaBankTest" />
+      <option name="METHOD_NAME" value="checksIfWorking" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -254,17 +254,17 @@
     <list>
       <item itemvalue="Application.JavaBank" />
       <item itemvalue="JUnit.JavaBankTest" />
-      <item itemvalue="JUnit.JavaBankTest (1)" />
       <item itemvalue="JUnit.JavaBankTest.sayingHello" />
       <item itemvalue="JUnit.JavaBankTest.inputMessage" />
+      <item itemvalue="JUnit.JavaBankTest.checksIfWorking" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JavaBankTest.checksIfWorking" />
         <item itemvalue="JUnit.JavaBankTest" />
         <item itemvalue="JUnit.JavaBankTest.inputMessage" />
         <item itemvalue="JUnit.JavaBankTest.sayingHello" />
         <item itemvalue="Application.JavaBank" />
-        <item itemvalue="JUnit.JavaBankTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -290,18 +290,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JavaBankTest_sayingHello - 2018.11.05 at 12h 44m 10s.xml">
-      <configuration name="JavaBankTest.sayingHello" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JavaBankTest_sayingHello - 2018.11.05 at 12h 46m 21s.xml">
-      <configuration name="JavaBankTest.sayingHello" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JavaBankTest_sayingHello - 2018.11.05 at 12h 46m 26s.xml">
-      <configuration name="JavaBankTest.sayingHello" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JavaBankTest_inputMessage - 2018.11.05 at 12h 46m 55s.xml">
-      <configuration name="JavaBankTest.inputMessage" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="JavaBankTest_inputMessage - 2018.11.05 at 12h 47m 19s.xml">
       <configuration name="JavaBankTest.inputMessage" configurationId="JUnit" />
     </history-entry>
@@ -319,6 +307,18 @@
     </history-entry>
     <history-entry file="JavaBankTest - 2018.11.05 at 13h 06m 05s.xml">
       <configuration name="JavaBankTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JavaBankTest - 2018.11.05 at 13h 10m 34s.xml">
+      <configuration name="JavaBankTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JavaBankTest - 2018.11.05 at 13h 10m 46s.xml">
+      <configuration name="JavaBankTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JavaBankTest - 2018.11.05 at 13h 11m 21s.xml">
+      <configuration name="JavaBankTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JavaBankTest_checksIfWorking - 2018.11.05 at 13h 41m 34s.xml">
+      <configuration name="JavaBankTest.checksIfWorking" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -403,10 +403,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/javabank/JavaBankTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+        <state relative-caret-position="330">
+          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#392#393#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
           </folding>
         </state>
       </provider>

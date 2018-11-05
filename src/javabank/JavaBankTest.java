@@ -2,29 +2,28 @@ package javabank;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 
-class JavaBankTest {
+public class JavaBankTest {
+
+    private JavaBank barclays;
 
     @BeforeEach
-    void initBank() throws Exception {
-        System.out.println("Hello");
+    void setUp() {
+        barclays = new JavaBank();
     }
 
     @Test
     void checksIfWorking() {
-        JavaBank barclays = new JavaBank();
         assertEquals("JavaBank is now Open!", barclays.greeting());
     }
 
     @Test
     void inputMessage() {
-        JavaBank barclays = new JavaBank();
         String input = "Alex";
         InputStream in = new ByteArrayInputStream(input.getBytes());
         System.setIn(in);
@@ -32,7 +31,6 @@ class JavaBankTest {
     }
 
     @Test
-    void checkBalanceOnAccount() {
-
+    void createANewBankAccount() {
     }
 }
