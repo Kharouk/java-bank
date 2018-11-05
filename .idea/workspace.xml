@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="580c56b3-3fef-44e6-919c-b3172b801b9c" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
+    <list default="true" id="580c56b3-3fef-44e6-919c-b3172b801b9c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/out/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaBank/javabank/JavaBank.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaBank/javabank/JavaBankTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javabank/JavaBank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javabank/JavaBank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javabank/JavaBankTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javabank/JavaBankTest.java" afterDir="false" />
+    </list>
+    <ignored path="out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,23 +28,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="iml" value="1" />
           <entry key="java" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="IDEA_MODULE" value="1" />
           <entry key="JAVA" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="856" />
+          <entry key="java" value="2219" />
           <entry key="txt" value="76" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="856" />
+          <entry key="JAVA" value="2219" />
           <entry key="PLAIN_TEXT" value="76" />
         </counts>
       </usages-collector>
@@ -46,11 +57,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/javabank/JavaBank.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+            <state relative-caret-position="380">
+              <caret line="19" column="69" selection-start-line="19" selection-start-column="69" selection-end-line="19" selection-end-column="69" />
               <folding>
-                <element signature="e#176#177#0" expanded="true" />
-                <element signature="e#196#197#0" expanded="true" />
+                <element signature="e#98#99#0" expanded="true" />
+                <element signature="e#144#145#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,8 +70,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/javabank/JavaBankTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+            <state relative-caret-position="197">
+              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,16 +95,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/javabank/JavaBankTest.java" />
         <option value="$PROJECT_DIR$/src/javabank/JavaBank.java" />
+        <option value="$PROJECT_DIR$/src/javabank/JavaBankTest.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-235" />
     <option name="y" value="-1177" />
     <option name="width" value="1920" />
-    <option name="height" value="1177" />
+    <option name="height" value="1173" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -109,6 +120,11 @@
             <path>
               <item name="JavaBank" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaBank" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaBank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaBank" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaBank" type="b2602c69:ProjectViewProjectNode" />
@@ -131,7 +147,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541419051025" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541423298109" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -143,6 +159,10 @@
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/out" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -199,16 +219,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JavaBankTest.inputMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaBank" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javabank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="javabank" />
+      <option name="MAIN_CLASS_NAME" value="javabank.JavaBankTest" />
+      <option name="METHOD_NAME" value="inputMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JavaBankTest.sayingHello" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaBank" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javabank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="javabank" />
+      <option name="MAIN_CLASS_NAME" value="javabank.JavaBankTest" />
+      <option name="METHOD_NAME" value="sayingHello" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.JavaBank" />
       <item itemvalue="JUnit.JavaBankTest" />
       <item itemvalue="JUnit.JavaBankTest (1)" />
+      <item itemvalue="JUnit.JavaBankTest.sayingHello" />
+      <item itemvalue="JUnit.JavaBankTest.inputMessage" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.JavaBankTest" />
-        <item itemvalue="JUnit.JavaBankTest (1)" />
+        <item itemvalue="JUnit.JavaBankTest.inputMessage" />
+        <item itemvalue="JUnit.JavaBankTest.sayingHello" />
         <item itemvalue="Application.JavaBank" />
+        <item itemvalue="JUnit.JavaBankTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -234,21 +290,40 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JavaBankTest - 2018.11.05 at 11h 26m 11s.xml">
-      <configuration name="JavaBankTest" configurationId="JUnit" />
+    <history-entry file="JavaBankTest_sayingHello - 2018.11.05 at 12h 44m 10s.xml">
+      <configuration name="JavaBankTest.sayingHello" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JavaBankTest - 2018.11.05 at 11h 38m 31s.xml">
-      <configuration name="JavaBankTest" configurationId="JUnit" />
+    <history-entry file="JavaBankTest_sayingHello - 2018.11.05 at 12h 46m 21s.xml">
+      <configuration name="JavaBankTest.sayingHello" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JavaBankTest - 2018.11.05 at 11h 41m 33s.xml">
-      <configuration name="JavaBankTest" configurationId="JUnit" />
+    <history-entry file="JavaBankTest_sayingHello - 2018.11.05 at 12h 46m 26s.xml">
+      <configuration name="JavaBankTest.sayingHello" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JavaBankTest - 2018.11.05 at 11h 41m 57s.xml">
+    <history-entry file="JavaBankTest_inputMessage - 2018.11.05 at 12h 46m 55s.xml">
+      <configuration name="JavaBankTest.inputMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JavaBankTest_inputMessage - 2018.11.05 at 12h 47m 19s.xml">
+      <configuration name="JavaBankTest.inputMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JavaBankTest_inputMessage - 2018.11.05 at 12h 48m 35s.xml">
+      <configuration name="JavaBankTest.inputMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JavaBankTest_inputMessage - 2018.11.05 at 12h 48m 48s.xml">
+      <configuration name="JavaBankTest.inputMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JavaBankTest_inputMessage - 2018.11.05 at 12h 49m 25s.xml">
+      <configuration name="JavaBankTest.inputMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JavaBankTest_inputMessage - 2018.11.05 at 12h 49m 49s.xml">
+      <configuration name="JavaBankTest.inputMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JavaBankTest - 2018.11.05 at 13h 06m 05s.xml">
       <configuration name="JavaBankTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-235" y="-1177" width="1920" height="1177" extended-state="0" />
+    <frame x="-235" y="-1177" width="1920" height="1173" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -257,13 +332,13 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973376" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" sideWeight="0.49893504" weight="0.3299539" />
-      <window_info active="true" anchor="bottom" id="Terminal" sideWeight="0.49946752" visible="true" weight="0.3299539" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.5005325" side_tool="true" visible="true" weight="0.3299539" />
-      <window_info anchor="bottom" id="Messages" sideWeight="0.49946752" weight="0.3299539" />
+      <window_info anchor="bottom" id="Version Control" sideWeight="0.49893504" weight="0.3293247" />
+      <window_info anchor="bottom" id="Terminal" sideWeight="0.49946752" weight="0.3293247" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.5005325" side_tool="true" weight="0.3299539" />
+      <window_info anchor="bottom" id="Messages" sideWeight="0.49946752" weight="0.3293247" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3299539" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3293247" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -278,6 +353,32 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -286,21 +387,24 @@
     <option name="LAST_COMMIT_MESSAGE" value="Create Java Project and add JUnit 5 as testing framework" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/JavaBank.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/javabank/JavaBank.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        <state relative-caret-position="380">
+          <caret line="19" column="69" selection-start-line="19" selection-start-column="69" selection-end-line="19" selection-end-column="69" />
           <folding>
-            <element signature="e#176#177#0" expanded="true" />
-            <element signature="e#196#197#0" expanded="true" />
+            <element signature="e#98#99#0" expanded="true" />
+            <element signature="e#144#145#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/javabank/JavaBankTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        <state relative-caret-position="197">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
