@@ -30,7 +30,4 @@ public class JavaBankTest {
         assertEquals("Nice to see you Alex, welcome to JavaBank!", barclays.sayingHello());
     }
 
-    @Test
-    void createANewBankAccount() {
-    }
 }
