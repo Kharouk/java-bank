@@ -31,6 +31,14 @@ public class JavaBankTest {
     }
 
     @Test
+    void inputMessageWithNoName() {
+        String input = "n";
+        InputStream in = new ByteArrayInputStream(input.getBytes());
+        System.setIn(in);
+        assertEquals("Fair enough. Have a wonderful day!", barclays.sayingHello());
+    }
+
+    @Test
     void OpeningUpABankAccount() {
         Person mockedPerson = mock(Person.class);
         when(mockedPerson.getBalance()).thenReturn(100.00);

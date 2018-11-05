@@ -20,9 +20,9 @@ public class JavaBank {
         Scanner reader = new Scanner(System.in);
         System.out.println("Are you changing your name?");
         String name = reader.nextLine();
-        if (name == "no" || name == "n") {
+        if (name.equals("no") || name.equals("n")) {
             return "Fair enough. Have a wonderful day!";
-        } else  {
+        } else {
             this.accountName = name;
             return String.format("That's a great new name %s, enjoy your time at the JavaBank!", accountName);
         }
