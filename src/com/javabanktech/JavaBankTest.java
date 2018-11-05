@@ -1,7 +1,7 @@
-package javabank;
+package com.javabanktech;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+import static org.mockito.Mockito.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -27,7 +27,16 @@ public class JavaBankTest {
         String input = "Alex";
         InputStream in = new ByteArrayInputStream(input.getBytes());
         System.setIn(in);
-        assertEquals("Nice to see you Alex, welcome to JavaBank!", barclays.sayingHello());
+        assertEquals("That's a great new name Alex, enjoy your time at the JavaBank!", barclays.sayingHello());
+    }
+
+    @Test
+    void OpeningUpABankAccount() {
+        Person mockedPerson = mock(Person.class);
+        when(mockedPerson.getBalance()).thenReturn(100.00);
+        when(mockedPerson.getName()).thenReturn("Steve");
+
+        assertEquals("Thanks for signing up with JavaBank, Steve. Your current total is $100.00", barclays.newAccount(mockedPerson));
     }
 
 }

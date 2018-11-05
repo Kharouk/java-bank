@@ -1,4 +1,4 @@
-package Person;
+package com.javabanktech;
 
 public class Person {
     private String name;
