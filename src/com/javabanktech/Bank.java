@@ -59,15 +59,17 @@ public class Bank {
         Scanner reader = new Scanner(System.in);
         System.out.println("You're making a withdrawal. Can you confirm to me your name please?");
         String input = "";
-        while (!input.equals(this.accountName) || !input.equals("quit")) {
+        while (true) {
             input = reader.nextLine();
             if (!input.equals(this.accountName)) {
                 System.out.println("That name isn't correct in our records. Please try again or type 'quit'.");
+            } else {
+                balance -= amount;
+                System.out.println(String.format("Thanks for confirming %s. We like to be cautious here at JavaBank. " +
+                        "Your updated balance is $" + formatter.format(this.balance), this.accountName));
+                break;
             }
         }
-        balance -= amount;
-        System.out.println(String.format("Thanks for confirming %s. We like to be cautious here at JavaBank. Your updated balance is $"
-                 + formatter.format(this.balance), this.accountName));
     }
 
     public String depositMoney(double amount) {
@@ -76,3 +78,4 @@ public class Bank {
                 "your new balance is $" + formatter.format(balance), accountName);
     }
 }
+
