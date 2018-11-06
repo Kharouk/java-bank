@@ -8,11 +8,13 @@ public class Bank {
     private double balance;
     private String accountName;
     private NumberFormat formatter = new DecimalFormat("#.00");
+
     public String greeting() {
         return "JavaBank is now Open!";
     }
     public String accountHolder() { return accountName; }
     public double currentBalance() { return balance; }
+    
     public String sayingHello() {
         Scanner reader = new Scanner(System.in);
         System.out.println("Are you changing your name?");
@@ -29,7 +31,8 @@ public class Bank {
         double d = person.getBalance();
         this.balance = d;
         this.accountName = person.getName();
-        return String.format("Thanks for signing up with JavaBank, %s. Your current total is $"+ formatter.format(d), accountName);
+        return String.format("Thanks for signing up with JavaBank, %s. Your current total is $"+
+                formatter.format(d), accountName);
     }
 
     public String makeWithdrawal(double amount) {
@@ -43,7 +46,8 @@ public class Bank {
             }
         }
         balance -= amount;
-        return String.format("Thanks for confirming %s. We like to be cautious here at JavaBank. Your updated balance is $" + formatter.format(this.balance), this.accountName);
+        return String.format("Thanks for confirming %s. We like to be cautious here at JavaBank. Your updated balance is $"
+                 + formatter.format(this.balance), this.accountName);
     }
 
     public String depositMoney(double amount) {

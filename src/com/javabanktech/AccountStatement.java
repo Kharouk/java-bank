@@ -2,7 +2,7 @@ package com.javabanktech;
 
 public class AccountStatement {
     private String accountName;
-    private double balance = 15.99;
+    private double balance;
 
     public AccountStatement(Bank account) {
         this.accountName = account.accountHolder();
