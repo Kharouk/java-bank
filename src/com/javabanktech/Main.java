@@ -4,14 +4,21 @@ package com.javabanktech;
 import java.util.Scanner;
 
 class Main {
+    // Un-needed yet fun console colors:
+    private static final String ANSI_RESET = "\u001B[0m";
+    private static final String ANSI_RED = "\u001B[31m";
+    public static final String ANSI_CYAN = "\u001B[36m";
+    public static final String ANSI_BLACK_BACKGROUND = "\u001B[40m";
+    private static final String ANSI_WHITE_BACKGROUND = "\u001B[47m";
+
+    // setting up variables beforehand to keep things DRY
     private static Bank javaBank;
     private static Person individual;
+
 
     public static void main(String[] args) {
         javaBank = new Bank();
         individual = new Person(null, 0, 0);
-        Scanner input = new Scanner(System.in);
-        String choice = "";
         applicationMenu();
     }
 
@@ -30,7 +37,10 @@ class Main {
                     System.out.println("How much would you like to withdraw?");
                     double value = input.nextDouble();
                     javaBank.makeWithdrawal(value);
-
+                    break;
+                case "4":
+                    System.out.println(javaBank.currentBalance());
+                    break;
                 default:
                     break;
 
@@ -41,12 +51,15 @@ class Main {
     }
 
     public static String bankChoices() {
-        return "Type 1 if your opening up a new account with us!\n" +
-                "Type 2 if you want to withdraw some moolah.\n" +
-                "Type 3 if deposit your life's work.\n" +
-                "Type 4 to check your balance.\n" +
-                "Type 5 to print your statement.\n" +
-                "Type 6 to change your name, you rockstar!\n" +
-                "Type 'quit' to leave JavaBank Technical App.";
+        return "=========================\n" +
+                "Type" + ANSI_RED + " 1 " + ANSI_RESET + "if your opening up a new account with us!\n" +
+                "Type" + ANSI_RED + " 2 " + ANSI_RESET + "if you want to withdraw some moolah.\n" +
+                "Type" + ANSI_RED + " 3 " + ANSI_RESET + "if deposit your life's work.\n" +
+                "Type" + ANSI_RED + " 4 " + ANSI_RESET + "to check your balance.\n" +
+                "Type" + ANSI_RED + " 5 " + ANSI_RESET + "to print your statement.\n" +
+                "Type" + ANSI_RED + " 6 " + ANSI_RESET + "to change your name, you rockstar\n" +
+                "=========================\n" +
+                "Type " + ANSI_WHITE_BACKGROUND + ANSI_CYAN + "'quit'" + ANSI_RESET +
+                " to leave JavaBank Technical App.";
     }
 }

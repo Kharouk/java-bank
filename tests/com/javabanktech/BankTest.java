@@ -49,28 +49,28 @@ public class BankTest {
         assertEquals("Thanks for signing up with JavaBank, Steve. Your current total is $100.00", barclays.newAccount(mockedPerson));
     }
 
-    @Test
-    void WithdrawingMoneyFromAccount() {
-        barclays.newAccount(mockedPerson);
-        String input = "Steve";
-        InputStream in = new ByteArrayInputStream(input.getBytes());
-        System.setIn(in);
-        assertEquals("Thanks for confirming Steve. We like to be cautious here at JavaBank. " +
-                    "Your updated balance is $50.00", barclays.makeWithdrawal(50));
-    }
-
-    @Test
-    @DisplayName("Trying to dupe the withdrawal system test:")
-    void TryingToDupeWithdrawalSystem() {
-        assertThrows(NoSuchElementException.class, () -> {
-            barclays.newAccount(mockedPerson);
-            String input = "Velma";
-            InputStream in = new ByteArrayInputStream(input.getBytes());
-            System.setIn(in);
-            assertEquals("That name isn't correct in our records. Please try again or type 'quit'.",
-                    barclays.makeWithdrawal(50));
-        });
-    }
+//    @Test
+//    void WithdrawingMoneyFromAccount() {
+//        barclays.newAccount(mockedPerson);
+//        String input = "Steve";
+//        InputStream in = new ByteArrayInputStream(input.getBytes());
+//        System.setIn(in);
+//        assertEquals("Thanks for confirming Steve. We like to be cautious here at JavaBank. " +
+//                    "Your updated balance is $50.00", barclays.makeWithdrawal(50));
+//    }
+//
+//    @Test
+//    @DisplayName("Trying to dupe the withdrawal system test:")
+//    void TryingToDupeWithdrawalSystem() {
+//        assertThrows(NoSuchElementException.class, () -> {
+//            barclays.newAccount(mockedPerson);
+//            String input = "Velma";
+//            InputStream in = new ByteArrayInputStream(input.getBytes());
+//            System.setIn(in);
+//            assertEquals("That name isn't correct in our records. Please try again or type 'quit'.",
+//                    barclays.makeWithdrawal(50));
+//        });
+//    }
 
     @Test
     void DepositingMyWeakEarningsIntoAccount() {
