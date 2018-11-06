@@ -9,7 +9,14 @@ public class AccountStatement {
         this.balance = account.currentBalance();
     }
 
-    public void printedStatement() {
-        System.out.println(String.format("-----%s----------%f----", accountName, balance));
+    public void printStatement() {
+        System.out.println(
+                "===========================\n" +
+                "CREDIT || DEBIT || BALANCE \n" +
+                "---------------------------\n" +
+                "500.00 ||       || 1500.00 \n" +
+                "       ||       || 1000.00 \n" +
+                "===========================\n"
+        );
     }
 }

@@ -14,10 +14,12 @@ class Main {
     // setting up variables beforehand to keep things DRY
     private static Bank javaBank;
     private static Person individual;
+    private static AccountStatement statement;
 
 
     public static void main(String[] args) {
         javaBank = new Bank();
+        statement = new AccountStatement(javaBank);
         individual = new Person(null, 0, 0);
         applicationMenu();
     }
@@ -41,6 +43,8 @@ class Main {
                 case "4":
                     System.out.println(javaBank.currentBalance());
                     break;
+                case "5":
+                    statement.printStatement();
                 default:
                     break;
 
