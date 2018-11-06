@@ -8,15 +8,11 @@ public class Bank {
     private double balance;
     private String accountName;
     private NumberFormat formatter = new DecimalFormat("#.00");
-
-    public static void main(String[] args) {
-
-    }
-
     public String greeting() {
         return "JavaBank is now Open!";
     }
-
+    public String accountHolder() { return accountName; }
+    public double currentBalance() { return balance; }
     public String sayingHello() {
         Scanner reader = new Scanner(System.in);
         System.out.println("Are you changing your name?");
