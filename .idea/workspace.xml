@@ -7,12 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbfada68-a39b-431f-b16b-1a4c13b38b29" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/JavaBank2/com/javabanktech/PersonTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/JavaBank2/com/javabanktech/PersonTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/javabanktech/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javabanktech/Bank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/javabanktech/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javabanktech/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/javabanktech/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javabanktech/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/com/javabanktech/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/com/javabanktech/PersonTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,13 +80,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6364" />
+          <entry key="java" value="6566" />
           <entry key="snippet" value="155" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6364" />
+          <entry key="JAVA" value="6566" />
           <entry key="Scratch" value="155" />
         </counts>
       </usages-collector>
@@ -114,8 +109,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/javabanktech/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="38" selection-start-line="38" selection-end-line="49" selection-end-column="105" />
+            <state relative-caret-position="428">
+              <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -306,7 +301,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541509491435" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541509756407" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -642,8 +637,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/javabanktech/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="38" selection-start-line="38" selection-end-line="49" selection-end-column="105" />
+        <state relative-caret-position="428">
+          <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
         </state>
       </provider>
     </entry>
