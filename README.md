@@ -6,6 +6,11 @@ Tests
 ---
 Using JUnit 5 for assertions and Mockito 2.0 for mocking and stubbing.
 
+Run Application
+---
+STILL IN DEVELOPMENT: https://repl.it/@Kharouk/JavaBank
+A live demo is available. Just press **run** and follow the instructions in the command line. 
+
 Requirements as a Technical Challenge
 ---
 * You should be able to interact with your code via a REPL like IRB or the JavaScript console.  (You don't need to implement a command line interface that takes input from STDIN.)
