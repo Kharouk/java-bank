@@ -1,40 +1,58 @@
 package com.javabanktech;
 
-        import java.text.DecimalFormat;
-        import java.text.NumberFormat;
-        import java.util.Scanner;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.util.Scanner;
 
 public class Bank {
     private double balance;
     private String accountName;
+    private NumberFormat formatter = new DecimalFormat("#.00");
 
     public static void main(String[] args) {
 
     }
 
-    public void greeting() {
-        System.out.println("JavaBank is now Open!");
+    public String greeting() {
+        return "JavaBank is now Open!";
     }
 
-    public void sayingHello() {
+    public String sayingHello() {
         Scanner reader = new Scanner(System.in);
         System.out.println("Are you changing your name?");
         String name = reader.nextLine();
         if (name.equals("no") || name.equals("n")) {
-            System.out.println("Fair enough. Have a wonderful day!");
+            return "Fair enough. Have a wonderful day!";
         } else {
             this.accountName = name;
-            System.out.println(String.format("That's a great new name %s, enjoy your time at the JavaBank!", accountName));
+            return String.format("That's a great new name %s, enjoy your time at the JavaBank!", accountName);
         }
     }
 
-    public void newAccount(Person person) {
+    public String newAccount(Person person) {
         double d = person.getBalance();
-        NumberFormat formatter = new DecimalFormat("#.00");
         this.balance = d;
         this.accountName = person.getName();
-        System.out.println(String.format("Thanks for signing up with JavaBank, %s. Your current total is $"+ formatter.format(d), accountName));
+        return String.format("Thanks for signing up with JavaBank, %s. Your current total is $"+ formatter.format(d), accountName);
     }
 
-}
+    public String makeWithdrawal(double amount) {
+        Scanner reader = new Scanner(System.in);
+        System.out.println("You're making a withdrawal. Can you confirm to me your name please?");
+        String input = "";
+        while (!input.equals(this.accountName)) {
+            input = reader.nextLine();
+            if (!input.equals(this.accountName)) {
+                System.out.println("That name isn't correct in our records. Please try again or type 'quit'.");
+            }
+        }
+        balance -= amount;
+        return String.format("Thanks for confirming %s. We like to be cautious here at JavaBank. Your updated balance is $" + formatter.format(this.balance), this.accountName);
+    }
 
+    public String depositMoney(double amount) {
+        balance += amount;
+        return String.format("Thanks for trusting us with your cash %s, " +
+                "your new balance is $" + formatter.format(balance), accountName);
+    }
+}
