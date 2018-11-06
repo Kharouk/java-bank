@@ -36,6 +36,4 @@ public class Bank {
         return String.format("Thanks for signing up with JavaBank, %s. Your current total is $"+ formatter.format(d), accountName);
     }
 
-
-
 }
