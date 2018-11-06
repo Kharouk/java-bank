@@ -29,4 +29,12 @@ class PersonTest {
         assertEquals(100.00, alex.getBalance());
     }
 
+    @Test
+    @DisplayName("Creating a person from within 🙃")
+    void InstantiatingPerson() {
+        Person alex = new Person(null, 0, 0);
+        alex.create("Alex", 23, 100);
+        assertEquals(100.00, alex.getBalance());
+    }
+
 }

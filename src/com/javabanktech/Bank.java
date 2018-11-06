@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class Bank {
     private double balance;
     private String accountName;
+    private Person individual;
     private NumberFormat formatter = new DecimalFormat("#.00");
 
     public String greeting() {
@@ -14,7 +15,7 @@ public class Bank {
     }
     public String accountHolder() { return accountName; }
     public double currentBalance() { return balance; }
-    
+
     public String sayingHello() {
         Scanner reader = new Scanner(System.in);
         System.out.println("Are you changing your name?");
@@ -33,6 +34,23 @@ public class Bank {
         this.accountName = person.getName();
         return String.format("Thanks for signing up with JavaBank, %s. Your current total is $"+
                 formatter.format(d), accountName);
+    }
+
+    public void systemSignUpNewApplication() {
+        Scanner input = new Scanner(System.in);
+        individual = new Person(null, 0, 0);
+        String name;
+        int age;
+        double balance;
+        System.out.println("Let's get to know you! What's your name?");
+        name = input.nextLine();
+        System.out.println(String.format("Nice to meet you, %s. How old are you?", name));
+        age = input.nextInt();
+        System.out.println("Great; one last question. If we accept your application, what's your starting" +
+                " balance?");
+        balance = input.nextDouble();
+        individual.create(name, age, balance);
+        System.out.println("Great! We have accepted your application.");
     }
 
     public String makeWithdrawal(double amount) {

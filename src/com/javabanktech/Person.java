@@ -22,4 +22,10 @@ public class Person {
     public double getBalance() {
         return balance;
     }
+
+    public void create(String name, int age, double balance) {
+        this.name = name;
+        this.age = age;
+        this.balance = balance;
+    }
 }
