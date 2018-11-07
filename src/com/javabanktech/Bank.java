@@ -16,7 +16,7 @@ public class Bank {
     public String accountHolder() { return accountName; }
     public double currentBalance() { return balance; }
 
-    public String sayingHello() {
+    public String changeName() {
         Scanner reader = new Scanner(System.in);
         System.out.println("Are you changing your name?");
         String name = reader.nextLine();
