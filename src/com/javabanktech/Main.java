@@ -17,7 +17,7 @@ class Main {
 
     public static void main(String[] args) {
         javaBank = new Bank();
-        statement = new AccountStatement(javaBank);
+        statement = new AccountStatement();
         Person individual = new Person(null, 0, 0);
         applicationMenu();
     }

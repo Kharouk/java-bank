@@ -1,22 +1,22 @@
 package com.javabanktech;
 
-public class AccountStatement {
-    private String accountName;
-    private double balance;
+import java.util.*;
 
-    public AccountStatement(Bank account) {
-        this.accountName = account.accountHolder();
-        this.balance = account.currentBalance();
-    }
+public class AccountStatement {
+    private ArrayList<Transaction> listOfTransactions = new ArrayList<>();
 
     public void printStatement() {
-        System.out.println(
-                "===========================\n" +
-                "CREDIT || DEBIT || BALANCE \n" +
-                "---------------------------\n" +
-                "500.00 ||       || 1500.00 \n" +
-                "       ||       || 1000.00 \n" +
-                "===========================\n"
-        );
+        System.out.println("date || credit || debit || balance");
+        for(Transaction t:listOfTransactions) {
+            System.out.println(t.getDate() + "||" + t.getCredit() + "||" + t.getDebit() + "||" + t.getBalance());
+        }
+    }
+
+    public void addTransaction(double credit, double debit, double balance) {
+        Transaction transaction = new Transaction(credit, debit, balance);
+        listOfTransactions.add(transaction);
     }
 }
+
+
+
