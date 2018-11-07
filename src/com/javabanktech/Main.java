@@ -8,19 +8,17 @@ class Main {
     private static final String ANSI_RESET = "\u001B[0m";
     private static final String ANSI_RED = "\u001B[31m";
     public static final String ANSI_CYAN = "\u001B[36m";
-    public static final String ANSI_BLACK_BACKGROUND = "\u001B[40m";
     private static final String ANSI_WHITE_BACKGROUND = "\u001B[47m";
 
     // setting up variables beforehand to keep things DRY
     private static Bank javaBank;
-    private static Person individual;
     private static AccountStatement statement;
 
 
     public static void main(String[] args) {
         javaBank = new Bank();
         statement = new AccountStatement(javaBank);
-        individual = new Person(null, 0, 0);
+        Person individual = new Person(null, 0, 0);
         applicationMenu();
     }
 
