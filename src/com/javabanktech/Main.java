@@ -17,7 +17,6 @@ class Main {
 
     public static void main(String[] args) {
         javaBank = new Bank();
-        statement = new AccountStatement();
         Person individual = new Person(null, 0, 0);
         applicationMenu();
     }
@@ -38,6 +37,10 @@ class Main {
                     double value = input.nextDouble();
                     javaBank.makeWithdrawal(value);
                     break;
+                case "3":
+                    System.out.println("How much would you like to deposit?");
+                    double amount = input.nextDouble();
+                    javaBank.depositMoney(amount);
                 case "4":
                     System.out.println(javaBank.balanceForDisplay());
                     break;

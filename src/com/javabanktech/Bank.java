@@ -7,8 +7,8 @@ import java.util.Scanner;
 public class Bank {
     private double balance;
     private String accountName;
-    private Person individual;
     private NumberFormat formatter = new DecimalFormat("#.00");
+    private AccountStatement statement = new AccountStatement();
 
     public String greeting() {
         return "JavaBank is now Open!";
@@ -16,7 +16,7 @@ public class Bank {
     public String accountHolder() { return accountName; }
     public double currentBalance() { return balance; }
     public String balanceForDisplay() {
-        return String.format("Your current balance is $" + formatter.format(this.balance));
+        return "Your current balance is $" + formatter.format(this.balance);
     }
 
     public String changeName() {
@@ -41,7 +41,7 @@ public class Bank {
 
     public void systemSignUpNewApplication() {
         Scanner input = new Scanner(System.in);
-        individual = new Person(null, 0, 0);
+        Person individual = new Person(null, 0, 0);
         String name;
         int age;
         double balance;
@@ -54,6 +54,7 @@ public class Bank {
                 " balance?");
         balance = input.nextDouble();
         this.balance = balance;
+        statement.addTransaction(0, 0, this.balance);
         individual.create(name, age, balance);
         System.out.println("Great! We have accepted your application.");
     }
@@ -68,6 +69,7 @@ public class Bank {
                 System.out.println("That name isn't correct in our records. Please try again or type 'quit'.");
             } else {
                 balance -= amount;
+                statement.addTransaction(amount, 0, this.balance);
                 System.out.println(String.format("Thanks for confirming %s. We like to be cautious here at JavaBank. " +
                         "Your updated balance is $" + formatter.format(this.balance), this.accountName));
                 break;
@@ -77,6 +79,7 @@ public class Bank {
 
     public String depositMoney(double amount) {
         balance += amount;
+        statement.addTransaction(0, amount, this.balance);
         return String.format("Thanks for trusting us with your cash %s, " +
                 "your new balance is $" + formatter.format(balance), accountName);
     }
