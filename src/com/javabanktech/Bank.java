@@ -15,6 +15,9 @@ public class Bank {
     }
     public String accountHolder() { return accountName; }
     public double currentBalance() { return balance; }
+    public String balanceForDisplay() {
+        return String.format("Your current balance is $" + formatter.format(this.balance));
+    }
 
     public String changeName() {
         Scanner reader = new Scanner(System.in);

@@ -41,7 +41,7 @@ class Main {
                     javaBank.makeWithdrawal(value);
                     break;
                 case "4":
-                    System.out.println(javaBank.currentBalance());
+                    System.out.println(javaBank.balanceForDisplay());
                     break;
                 case "5":
                     statement.printStatement();

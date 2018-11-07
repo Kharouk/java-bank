@@ -14,8 +14,6 @@ import java.util.NoSuchElementException;
 public class BankTest {
     private Bank barclays;
     private Person mockedPerson;
-    private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-    private final PrintStream originalOut = System.out;
 
     @BeforeEach
     void setUp() {
@@ -79,6 +77,7 @@ public class BankTest {
 
     @Test
     void WithdrawingMoneyUserDoesNotHave() {
+        barclays.newAccount(mockedPerson);
 
     }
 
