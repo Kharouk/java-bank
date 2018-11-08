@@ -15,20 +15,9 @@ public class Bank {
     }
     public String accountHolder() { return accountName; }
     public double currentBalance() { return balance; }
+    public String getStatement() { return statement.printStatement(); }
     public String balanceForDisplay() {
         return "Your current balance is $" + formatter.format(this.balance);
-    }
-
-    public String changeName() {
-        Scanner reader = new Scanner(System.in);
-        System.out.println("Are you changing your name?");
-        String name = reader.nextLine();
-        if (name.equals("no") || name.equals("n")) {
-            return "Fair enough. Have a wonderful day!";
-        } else {
-            this.accountName = name;
-            return String.format("That's a great new name %s, enjoy your time at the JavaBank!", accountName);
-        }
     }
 
     public String newAccount(Person person) {
@@ -63,16 +52,18 @@ public class Bank {
         Scanner reader = new Scanner(System.in);
         System.out.println("You're making a withdrawal. Can you confirm to me your name please?");
         String input = "";
-        while (true) {
+        while (!input.equals(this.accountName)) {
             input = reader.nextLine();
-            if (!input.equals(this.accountName)) {
-                System.out.println("That name isn't correct in our records. Please try again or type 'quit'.");
-            } else {
+            if (input.equals(this.accountName)) {
                 balance -= amount;
                 statement.addTransaction(amount, 0, this.balance);
                 System.out.println(String.format("Thanks for confirming %s. We like to be cautious here at JavaBank. " +
                         "Your updated balance is $" + formatter.format(this.balance), this.accountName));
+            } else if (input.equals("quit")) {
+                System.out.println("Goodbye!");
                 break;
+            } else {
+                System.out.println("That name isn't correct in our records. Please try again or type 'quit'.");
             }
         }
     }
@@ -84,4 +75,5 @@ public class Bank {
                 "your new balance is $" + formatter.format(balance), accountName);
     }
 }
+
 

@@ -1,36 +1,48 @@
 package com.javabanktech;
 
 import java.util.Date;
+import java.util.Calendar;
 
 public class Transaction {
     private double credit;
     private double debit;
     private double balance;
-    private String date;
+    private Date date;
 
 
     public Transaction(double credit, double debit, double balance) {
-        var date = new Date();
         this.credit = credit;
         this.debit = debit;
         this.balance = balance;
-        this.date = date.toString();
+        this.date = Calendar.getInstance().getTime();
     }
 
-    public String getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public double getCredit() {
-        return credit;
+    public String getCredit() {
+        if (this.credit == 0.0) {
+            return " ";
+        } else {
+            return String.format("%.2f", credit);
+        }
     }
 
-    public double getDebit() {
-        return debit;
+    public String getDebit() {
+        if (this.debit == 0.0) {
+            return " ";
+        } else {
+            return String.format("%.2f", debit);
+        }
     }
 
-    public double getBalance() {
-        return balance;
+    public String getBalance() {
+        if (this.balance == 0.0) {
+            return " ";
+        } else {
+            return String.format("%.2f", balance);
+        }
     }
 
 }

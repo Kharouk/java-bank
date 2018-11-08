@@ -12,8 +12,6 @@ class Main {
 
     // setting up variables beforehand to keep things DRY
     private static Bank javaBank;
-    private static AccountStatement statement;
-
 
     public static void main(String[] args) {
         javaBank = new Bank();
@@ -45,7 +43,10 @@ class Main {
                     System.out.println(javaBank.balanceForDisplay());
                     break;
                 case "5":
-                    statement.printStatement();
+                    javaBank.getStatement();
+                case "quit":
+                    System.out.println("Thanks for visiting JavaBank!");
+                    break;
                 default:
                     break;
 
@@ -62,7 +63,6 @@ class Main {
                 "Type" + ANSI_RED + " 3 " + ANSI_RESET + "if deposit your life's work.\n" +
                 "Type" + ANSI_RED + " 4 " + ANSI_RESET + "to check your balance.\n" +
                 "Type" + ANSI_RED + " 5 " + ANSI_RESET + "to print your statement.\n" +
-                "Type" + ANSI_RED + " 6 " + ANSI_RESET + "to change your name, you rockstar\n" +
                 "=========================\n" +
                 "Type " + ANSI_WHITE_BACKGROUND + ANSI_CYAN + "'quit'" + ANSI_RESET +
                 " to leave JavaBank Technical App.";
