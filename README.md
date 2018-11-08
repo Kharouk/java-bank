@@ -2,12 +2,20 @@
 
 A bank transfer system written entirely in Java. Was built in around two days and my primary focuses were to improve my Object Oriented Design as well using Test-Driven Development to create an application in a language I barely know.
 
+### A blog post regarding this project can be found [here](https://kharouk.github.io).
+
+## Try It Without Downloading Anything:
+### A live demo is available: https://repl.it/@Kharouk/JavaBank
+
+Just press **run**.
+
+
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. Due to the project being a Java application, there are a few prerequisites if you've never launched a Java program on your computer.
 
 
 ## Prerequisites
-1. Check you have Java installed. If not, follow the instructions to download Java [here][1].
+1. Check if you have Java installed. If not, follow the instructions to download Java [here][1].
 ```
 $ java
 ```
@@ -49,23 +57,17 @@ cd out/test/JavaBank2/com/javabanktech
 If you want to run the tests, open up the files in an IDE like IDEA or a text editor like VSCode:
   <img src="assets/out2.gif" width="500">
 
-
-Try It Without Downloading:
----
-A live demo is available: https://repl.it/@Kharouk/JavaBank
-Just press **run** and follow the instructions in the command line. 
-
 Requirements as a Technical Challenge
 ---
 This project was simulated to be like a Technical Challenge. Here was the criteria given in solving this challenge:
 
-[x] You should be able to interact with your code via a REPL like IRB or the JavaScript console.  (You don't need to implement a command line interface that takes input from STDIN.)
+- [x] You should be able to interact with your code via a REPL like IRB or the JavaScript console.  (You don't need to implement a command line interface that takes input from STDIN.)
 
-[x] Deposits, withdrawal.
+- [x] Deposits, withdrawal.
 
-[x] Account statement (date, amount, balance) printing.
+- [x] Account statement (date, amount, balance) printing.
 
-[] Data can be kept in memory (it doesn't need to be stored to a database or anything).
+- [ ] Data can be kept in memory (it doesn't need to be stored to a database or anything).
 
 **Given** a client makes a deposit of 1000 on 10-01-2012  
 **And** a deposit of 2000 on 13-01-2012  
