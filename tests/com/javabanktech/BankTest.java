@@ -29,22 +29,6 @@ public class BankTest {
     }
 
     @Test
-    void changingYourName() {
-        String input = "Alex";
-        InputStream in = new ByteArrayInputStream(input.getBytes());
-        System.setIn(in);
-        assertEquals("That's a great new name Alex, enjoy your time at the JavaBank!", barclays.changeName());
-    }
-
-    @Test
-    void inputMessageWithNoName() {
-        String input = "n";
-        InputStream in = new ByteArrayInputStream(input.getBytes());
-        System.setIn(in);
-        assertEquals("Fair enough. Have a wonderful day!", barclays.changeName());
-    }
-
-    @Test
     void OpeningUpABankAccount() {
         assertEquals("Thanks for signing up with JavaBank, Steve. Your current total is $100.00",
                 barclays.newAccount(mockedPerson));
@@ -78,6 +62,11 @@ public class BankTest {
     @Test
     void WithdrawingMoneyUserDoesNotHave() {
         barclays.newAccount(mockedPerson);
+        String input = "Steve";
+        InputStream in = new ByteArrayInputStream(input.getBytes());
+        System.setIn(in);
+        barclays.makeWithdrawal(101);
+        assertEquals(100, barclays.currentBalance());
 
     }
 

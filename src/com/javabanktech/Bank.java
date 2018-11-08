@@ -52,19 +52,23 @@ public class Bank {
         Scanner reader = new Scanner(System.in);
         System.out.println("You're making a withdrawal. Can you confirm to me your name please?");
         String input = "";
-        while (!input.equals(this.accountName)) {
-            input = reader.nextLine();
-            if (input.equals(this.accountName)) {
-                balance -= amount;
-                statement.addTransaction(amount, 0, this.balance);
-                System.out.println(String.format("Thanks for confirming %s. We like to be cautious here at JavaBank. " +
-                        "Your updated balance is $" + formatter.format(this.balance), this.accountName));
-            } else if (input.equals("quit")) {
-                System.out.println("Goodbye!");
-                break;
-            } else {
-                System.out.println("That name isn't correct in our records. Please try again or type 'quit'.");
+        if (balance >= amount) {
+            while (!input.equals(this.accountName)) {
+                input = reader.nextLine();
+                if (input.equals(this.accountName)) {
+                    balance -= amount;
+                    statement.addTransaction(amount, 0, this.balance);
+                    System.out.println(String.format("Thanks for confirming %s. We like to be cautious here at JavaBank. " +
+                            "Your updated balance is $" + formatter.format(this.balance), this.accountName));
+                } else if (input.equals("quit")) {
+                    System.out.println("Goodbye!");
+                    break;
+                } else {
+                    System.out.println("That name isn't correct in our records. Please try again or type 'quit'.");
+                }
             }
+        } else {
+            System.out.println("Sorry, you don't have that amount of money to withdraw");
         }
     }
 

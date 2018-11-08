@@ -7,10 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbfada68-a39b-431f-b16b-1a4c13b38b29" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/javabanktech/AccountStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javabanktech/AccountStatement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/javabanktech/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javabanktech/Bank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/javabanktech/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javabanktech/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/javabanktech/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javabanktech/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/com/javabanktech/BankTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/com/javabanktech/BankTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,26 +70,26 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="4" />
-          <entry key="java" value="30" />
+          <entry key="java" value="33" />
           <entry key="snippet" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="4" />
-          <entry key="JAVA" value="30" />
+          <entry key="JAVA" value="33" />
           <entry key="Scratch" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="12119" />
+          <entry key="java" value="12477" />
           <entry key="snippet" value="612" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="12119" />
+          <entry key="JAVA" value="12477" />
           <entry key="Scratch" value="612" />
         </counts>
       </usages-collector>
@@ -111,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/javabanktech/Bank.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="15" column="57" lean-forward="true" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+            <state relative-caret-position="252">
+              <caret line="62" column="49" lean-forward="true" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#322#323#0" expanded="true" />
@@ -155,14 +153,44 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/javabanktech/AccountStatement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
+            <state relative-caret-position="137">
               <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/com/javabanktech/BankTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="67" column="35" selection-start-line="67" selection-start-column="35" selection-end-line="67" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/com/javabanktech/PersonTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/com/javabanktech/AccountStatementTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -193,15 +221,15 @@
         <option value="$PROJECT_DIR$/tests/com/javabanktech/PersonTest.java" />
         <option value="$PROJECT_DIR$/src/com/javabanktech/Person.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console_5.snippet" />
-        <option value="$PROJECT_DIR$/tests/com/javabanktech/BankTest.java" />
         <option value="$PROJECT_DIR$/tests/com/javabanktech/TransactionTest.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console_7.snippet" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console_8.snippet" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console_9.snippet" />
         <option value="$PROJECT_DIR$/src/com/javabanktech/Main.java" />
         <option value="$PROJECT_DIR$/src/com/javabanktech/AccountStatement.java" />
-        <option value="$PROJECT_DIR$/src/com/javabanktech/Bank.java" />
         <option value="$PROJECT_DIR$/src/com/javabanktech/Transaction.java" />
+        <option value="$PROJECT_DIR$/src/com/javabanktech/Bank.java" />
+        <option value="$PROJECT_DIR$/tests/com/javabanktech/BankTest.java" />
       </list>
     </option>
   </component>
@@ -333,7 +361,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541658622871" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541659182514" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -421,7 +449,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonTest.InstantiatingPerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BankTest.WithdrawingMoneyUserDoesNotHave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaBank2" />
       <extension name="coverage">
         <pattern>
@@ -430,8 +458,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.javabanktech" />
-      <option name="MAIN_CLASS_NAME" value="com.javabanktech.PersonTest" />
-      <option name="METHOD_NAME" value="InstantiatingPerson" />
+      <option name="MAIN_CLASS_NAME" value="com.javabanktech.BankTest" />
+      <option name="METHOD_NAME" value="WithdrawingMoneyUserDoesNotHave" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -450,16 +478,16 @@
       <item itemvalue="JUnit.BankTest" />
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.BankTest.WithdrawingMoneyFromAccount" />
-      <item itemvalue="JUnit.PersonTest.InstantiatingPerson" />
       <item itemvalue="JUnit.BankTest.TryingToDupeWithdrawalSystem" />
+      <item itemvalue="JUnit.BankTest.WithdrawingMoneyUserDoesNotHave" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.BankTest" />
+        <item itemvalue="JUnit.BankTest.WithdrawingMoneyUserDoesNotHave" />
         <item itemvalue="JUnit.BankTest.TryingToDupeWithdrawalSystem" />
         <item itemvalue="JUnit.BankTest.WithdrawingMoneyFromAccount" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.PersonTest.InstantiatingPerson" />
       </list>
     </recent_temporary>
   </component>
@@ -477,18 +505,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BankTest_WithdrawingMoneyFromAccount - 2018.11.07 at 11h 25m 47s.xml">
-      <configuration name="BankTest.WithdrawingMoneyFromAccount" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BankTest_WithdrawingMoneyFromAccount - 2018.11.07 at 11h 29m 11s.xml">
-      <configuration name="BankTest.WithdrawingMoneyFromAccount" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BankTest_WithdrawingMoneyFromAccount - 2018.11.07 at 11h 29m 51s.xml">
-      <configuration name="BankTest.WithdrawingMoneyFromAccount" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BankTest_WithdrawingMoneyFromAccount - 2018.11.07 at 11h 30m 45s.xml">
-      <configuration name="BankTest.WithdrawingMoneyFromAccount" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BankTest_WithdrawingMoneyFromAccount - 2018.11.07 at 11h 31m 28s.xml">
       <configuration name="BankTest.WithdrawingMoneyFromAccount" configurationId="JUnit" />
     </history-entry>
@@ -507,6 +523,18 @@
     <history-entry file="BankTest - 2018.11.07 at 11h 53m 29s.xml">
       <configuration name="BankTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BankTest - 2018.11.08 at 06h 32m 21s.xml">
+      <configuration name="BankTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankTest_WithdrawingMoneyUserDoesNotHave - 2018.11.08 at 06h 36m 01s.xml">
+      <configuration name="BankTest.WithdrawingMoneyUserDoesNotHave" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankTest_WithdrawingMoneyUserDoesNotHave - 2018.11.08 at 06h 36m 25s.xml">
+      <configuration name="BankTest.WithdrawingMoneyUserDoesNotHave" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankTest_WithdrawingMoneyUserDoesNotHave - 2018.11.08 at 06h 39m 02s.xml">
+      <configuration name="BankTest.WithdrawingMoneyUserDoesNotHave" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -521,7 +549,7 @@
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17043619" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.17043619" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -530,15 +558,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299539" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32903227" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32892805" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3299539" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32903227" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32892805" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32953367" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32903227" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32892805" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -550,7 +578,7 @@
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32960597" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17043619" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17043619" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -559,15 +587,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299539" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32903227" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32892805" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3299539" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32903227" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32892805" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32953367" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32903227" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32892805" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -621,13 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/com/javabanktech/PersonTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console_5.snippet">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -645,16 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/com/javabanktech/BankTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="721">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/com/javabanktech/TransactionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -664,13 +675,6 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console_6.snippet">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/com/javabanktech/AccountStatementTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console_7.snippet">
       <provider selected="true" editor-type-id="text-editor" />
@@ -711,20 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/javabanktech/Bank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="15" column="57" lean-forward="true" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#627#628#0" expanded="true" />
-            <element signature="e#710#711#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/javabanktech/Transaction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -739,8 +729,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/javabanktech/AccountStatement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
+        <state relative-caret-position="137">
           <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/com/javabanktech/PersonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/com/javabanktech/AccountStatementTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/javabanktech/Bank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="62" column="49" lean-forward="true" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+            <element signature="e#710#711#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/com/javabanktech/BankTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="67" column="35" selection-start-line="67" selection-start-column="35" selection-end-line="67" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
