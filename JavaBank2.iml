@@ -57,5 +57,14 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="JavaBank2" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/junit-platform-console-standalone-1.3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
