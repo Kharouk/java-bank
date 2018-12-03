@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class Bank {
     private double balance;
     private String accountName;
+    private LanguageSupport languages = new LanguageSupport();
     private NumberFormat formatter = new DecimalFormat("#.00");
     private AccountStatement statement = new AccountStatement();
     private Scanner input = new Scanner(System.in);
@@ -52,7 +53,8 @@ public class Bank {
             statement.addTransaction(value, 0, this.balance);
             System.out.println("Your new balance is $" + balance);
         } else {
-            System.out.println("Sorry, you don't have that amount of money to withdraw.");
+            // An Example of refactoring English Interface:
+            System.out.println(languages.withdrawalCatch());
         }
     }
 

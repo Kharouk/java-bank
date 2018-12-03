@@ -41,6 +41,10 @@ public class LanguageSupport {
         return "Thank you for visiting JavaBank!";
     }
 
+    String withdrawalCatch() {
+        return "Sorry, you don't have that amount of money to withdraw.";
+    }
+
     // Un-needed yet fun console colors:
     private static final String ANSI_RESET = "\u001B[0m";
     private static final String ANSI_RED = "\u001B[31m";
