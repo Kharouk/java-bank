@@ -6,7 +6,7 @@ public class LanguageSupport {
         beginLaunch();
     }
 
-    private String beginLaunch() {
-        return String.format("We are sorry that we have defaulted to %s. What language do you prefer?", this.language);
+    void beginLaunch() {
+        System.out.println(String.format("We are sorry that we have defaulted to %s. What language do you prefer?", this.language));
     }
 }
