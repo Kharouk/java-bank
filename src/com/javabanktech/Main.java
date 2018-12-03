@@ -40,13 +40,16 @@ class Main {
                     System.out.println("How much would you like to deposit?");
                     double amount = input.nextDouble();
                     javaBank.depositMoney(amount);
+                    break;
                 case "4":
                     System.out.println(javaBank.balanceForDisplay());
                     break;
                 case "5":
                     javaBank.getStatement();
+                    break;
                 case "6":
                     languageSupport.beginLaunch();
+                    break;
                 case "quit":
                     System.out.println("Thanks for visiting JavaBank!");
                     break;

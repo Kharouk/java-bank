@@ -60,6 +60,7 @@ public class Bank {
                     statement.addTransaction(amount, 0, this.balance);
                     System.out.println(String.format("Thanks for confirming %s. We like to be cautious here at JavaBank. " +
                             "Your updated balance is $" + formatter.format(this.balance), this.accountName));
+                    break;
                 } else if (input.equals("quit")) {
                     System.out.println("Goodbye!");
                     break;
@@ -68,7 +69,7 @@ public class Bank {
                 }
             }
         } else {
-            System.out.println("Sorry, you don't have that amount of money to withdraw");
+            System.out.println("Sorry, you don't have that amount of money to withdraw.");
         }
     }
 
