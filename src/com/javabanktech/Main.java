@@ -12,9 +12,11 @@ class Main {
 
     // setting up variables beforehand to keep things DRY
     private static Bank javaBank;
+    private static LanguageSupport languageSupport;
 
     public static void main(String[] args) {
         javaBank = new Bank();
+        languageSupport = new LanguageSupport();
         applicationMenu();
     }
 
@@ -38,11 +40,16 @@ class Main {
                     System.out.println("How much would you like to deposit?");
                     double amount = input.nextDouble();
                     javaBank.depositMoney(amount);
+                    break;
                 case "4":
                     System.out.println(javaBank.balanceForDisplay());
                     break;
                 case "5":
                     javaBank.getStatement();
+                    break;
+                case "6":
+                    languageSupport.beginLaunch();
+                    break;
                 case "quit":
                     System.out.println("Thanks for visiting JavaBank!");
                     break;
@@ -62,6 +69,7 @@ class Main {
                 "Type" + ANSI_RED + " 3 " + ANSI_RESET + "if deposit your life's work.\n" +
                 "Type" + ANSI_RED + " 4 " + ANSI_RESET + "to check your balance.\n" +
                 "Type" + ANSI_RED + " 5 " + ANSI_RESET + "to print your statement.\n" +
+                "Type" + ANSI_RED + " 6 " + ANSI_RESET + "to change languages.\n" +
                 "=========================\n" +
                 "Type " + ANSI_WHITE_BACKGROUND + ANSI_CYAN + "'quit'" + ANSI_RESET +
                 " to leave JavaBank Technical App.";
