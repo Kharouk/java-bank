@@ -11,9 +11,8 @@ public class Bank {
     private AccountStatement statement = new AccountStatement();
 
     public String greeting() {
-        return "JavaBank is now Open!";
+        return "✅ JavaBank";
     }
-    public String accountHolder() { return accountName; }
     public double currentBalance() { return balance; }
     public void getStatement() { statement.printStatement(); }
     public String balanceForDisplay() {
