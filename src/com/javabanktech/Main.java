@@ -29,7 +29,7 @@ class Main {
                     javaBank.makeWithdrawal();
                     break;
                 case "3":
-                    javaBank.depositMoney();
+                    System.out.println(javaBank.depositMoney());
                     break;
                 case "4":
                     System.out.println(javaBank.balanceForDisplay());

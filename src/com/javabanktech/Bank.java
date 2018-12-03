@@ -42,39 +42,28 @@ public class Bank {
     }
 
     void makeWithdrawal() {
-        System.out.println("How much would you like to withdraw?");
+        // User inputs how much to withdraw
+        System.out.println("How much to withdraw?");
         double value = input.nextDouble();
-        Scanner reader = new Scanner(System.in);
-        System.out.println("You're making a withdrawal. Can you confirm to me your name please?");
-        String input = "";
+
+        // Double check if they have the money
         if (balance >= value) {
-            while (!input.equals(this.accountName)) {
-                input = reader.nextLine();
-                if (input.equals(this.accountName)) {
-                    balance -= value;
-                    statement.addTransaction(value, 0, this.balance);
-                    System.out.println(String.format("Thanks for confirming %s. We like to be cautious here at JavaBank. " +
-                            "Your updated balance is $" + formatter.format(this.balance), this.accountName));
-                    break;
-                } else if (input.equals("quit")) {
-                    System.out.println("Goodbye!");
-                    break;
-                } else {
-                    System.out.println("That name isn't correct in our records. Please try again or type 'quit'.");
-                }
-            }
+            balance -= value;
+            statement.addTransaction(value, 0, this.balance);
+            System.out.println("Your new balance is $" + balance);
         } else {
             System.out.println("Sorry, you don't have that amount of money to withdraw.");
         }
     }
 
     String depositMoney() {
-        System.out.println("How much would you like to deposit?");
+        // User enter how much to deposit here:
+        System.out.println("How much to Deposit?");
         double amount = input.nextDouble();
         balance += amount;
         statement.addTransaction(0, amount, this.balance);
-        return String.format("Thanks for trusting us with your cash %s, " +
-                "your new balance is $" + formatter.format(balance), accountName);
+        // User gets confirmation that balance has been updated:
+        return "Balance is $" + formatter.format(balance);
     }
 }
 

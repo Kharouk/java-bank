@@ -10,7 +10,7 @@ public class LanguageSupport {
     }
 
     void beginLaunch() {
-        System.out.println("We are sorry that we have defaulted to " + this.language + ". What language do you prefer?");
+        System.out.println("We are sorry that we have defaulted to English. What language do you prefer?");
         userSetsLanguage();
     }
 
