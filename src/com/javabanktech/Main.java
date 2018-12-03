@@ -40,10 +40,8 @@ class Main {
                 case "6":
                     languages.beginLaunch();
                     break;
-                case "quit":
-                    languages.goodbye();
-                    break;
                 default:
+                    System.out.println(languages.goodbye());
                     break;
 
             }

@@ -14,37 +14,31 @@ public class Bank {
     String greeting() {
         return "✅ JavaBank";
     }
-    double currentBalance() { return balance; }
     void getStatement() { statement.printStatement(); }
     String balanceForDisplay() {
         return "$" + formatter.format(this.balance);
     }
 
-    String newAccount(Person person) {
-        double d = person.getBalance();
-        this.balance = d;
-        this.accountName = person.getName();
-        return String.format("Thanks for signing up with JavaBank, %s. Your current total is $"+
-                formatter.format(d), accountName);
-    }
-
     void systemSignUpNewApplication() {
-        Person individual = new Person(null, 0, 0);
-        String name;
         int age;
-        double balance;
-        System.out.println("Let's get to know you! What's your name?");
-        name = input.nextLine();
-        this.accountName = name;
-        System.out.println(String.format("Nice to meet you, %s. How old are you?", name));
+
+        // User enters name here:
+        System.out.println("Name?");
+        this.accountName = input.nextLine();
+
+        // User enters age here:
+        System.out.println("Age?");
         age = input.nextInt();
-        System.out.println("Great; one last question. If we accept your application, what's your starting" +
-                " balance?");
-        balance = input.nextDouble();
-        this.balance = balance;
+
+        // User enters balance here:
+        System.out.println("Starting balance?");
+        this.balance = input.nextDouble();
+
         statement.addTransaction(0, 0, this.balance);
-        individual.create(name, age, balance);
-        System.out.println("Great! We have accepted your application.");
+        new Person(this.accountName, age, this.balance);
+
+        // Give Confirmation:
+        System.out.println("Confirmed.");
     }
 
     void makeWithdrawal() {
