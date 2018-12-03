@@ -18,7 +18,7 @@ class Main {
         Scanner input = new Scanner(System.in);
         String choice = "";
         System.out.println(javaBank.greeting());
-        while (!choice.equals("quit")) {
+        while (!choice.equals("Q")) {
             System.out.println(bankChoices());
             choice = input.nextLine();
             switch(choice) {
@@ -26,14 +26,10 @@ class Main {
                     javaBank.systemSignUpNewApplication();
                     break;
                 case "2":
-                    System.out.println("How much would you like to withdraw?");
-                    double value = input.nextDouble();
-                    javaBank.makeWithdrawal(value);
+                    javaBank.makeWithdrawal();
                     break;
                 case "3":
-                    System.out.println("How much would you like to deposit?");
-                    double amount = input.nextDouble();
-                    javaBank.depositMoney(amount);
+                    javaBank.depositMoney();
                     break;
                 case "4":
                     System.out.println(javaBank.balanceForDisplay());
@@ -45,7 +41,7 @@ class Main {
                     languages.beginLaunch();
                     break;
                 case "quit":
-                    System.out.println("Thanks for visiting JavaBank!");
+                    languages.goodbye();
                     break;
                 default:
                     break;

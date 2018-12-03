@@ -9,17 +9,18 @@ public class Bank {
     private String accountName;
     private NumberFormat formatter = new DecimalFormat("#.00");
     private AccountStatement statement = new AccountStatement();
+    private Scanner input = new Scanner(System.in);
 
-    public String greeting() {
+    String greeting() {
         return "✅ JavaBank";
     }
-    public double currentBalance() { return balance; }
-    public void getStatement() { statement.printStatement(); }
-    public String balanceForDisplay() {
-        return "Your current balance is $" + formatter.format(this.balance);
+    double currentBalance() { return balance; }
+    void getStatement() { statement.printStatement(); }
+    String balanceForDisplay() {
+        return "$" + formatter.format(this.balance);
     }
 
-    public String newAccount(Person person) {
+    String newAccount(Person person) {
         double d = person.getBalance();
         this.balance = d;
         this.accountName = person.getName();
@@ -27,8 +28,7 @@ public class Bank {
                 formatter.format(d), accountName);
     }
 
-    public void systemSignUpNewApplication() {
-        Scanner input = new Scanner(System.in);
+    void systemSignUpNewApplication() {
         Person individual = new Person(null, 0, 0);
         String name;
         int age;
@@ -47,16 +47,18 @@ public class Bank {
         System.out.println("Great! We have accepted your application.");
     }
 
-    public void makeWithdrawal(double amount) {
+    void makeWithdrawal() {
+        System.out.println("How much would you like to withdraw?");
+        double value = input.nextDouble();
         Scanner reader = new Scanner(System.in);
         System.out.println("You're making a withdrawal. Can you confirm to me your name please?");
         String input = "";
-        if (balance >= amount) {
+        if (balance >= value) {
             while (!input.equals(this.accountName)) {
                 input = reader.nextLine();
                 if (input.equals(this.accountName)) {
-                    balance -= amount;
-                    statement.addTransaction(amount, 0, this.balance);
+                    balance -= value;
+                    statement.addTransaction(value, 0, this.balance);
                     System.out.println(String.format("Thanks for confirming %s. We like to be cautious here at JavaBank. " +
                             "Your updated balance is $" + formatter.format(this.balance), this.accountName));
                     break;
@@ -72,7 +74,9 @@ public class Bank {
         }
     }
 
-    public String depositMoney(double amount) {
+    String depositMoney() {
+        System.out.println("How much would you like to deposit?");
+        double amount = input.nextDouble();
         balance += amount;
         statement.addTransaction(0, amount, this.balance);
         return String.format("Thanks for trusting us with your cash %s, " +
